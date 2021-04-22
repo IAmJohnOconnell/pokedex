@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pokedex</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-	<link rel="stylesheet" href="assets/styles.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pokedex</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+		<link rel="stylesheet" href="assets/styles.css">
+	</head>
 
-<body>
+	<body>
 
-	<div class="columns">
-		<div class="column is-half is-offset-one-quarter">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-4by3">
-						<img src="assets/pokedex.png"
-							id="imageDisplay" alt="Placeholder image">
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-left">
-							<figure class="image is-48x48">
-								<img src="assets/pokeball.png" id='avatar'
-									alt="Placeholder image">
-							</figure>
-						</div>
-						<div class="media-content">
-							<p class="title is-4" id="name">Thank you for checking out this Pokedex!</p>
-							<p class="subtitle is-6" id='id'>#1</p>
-						</div>
+		<div class="columns">
+			<div class="column is-half is-offset-one-quarter">
+				<div class="card">
+					<div class="card-image">
+						
+						<figure class="image is-4by3">
+
+							<img src="assets/pokedex.png" id="imageDisplay" alt="Placeholder image">
+						</figure>
 					</div>
-
-					<div class="content has-text-centered" id="pokemonDesc">
-						<p>Welcome to the Pokedex, this simple verion will allow you to search for a pokemon by name or
-							number, then display some info about it.
-							<br>
-							Enjoy!</p>
-						<p>Type a Pokemons' name or number to get started</p>
-					</div>
-					<div>
-						<form action="" class="form">
-							<div class="field has-addons">
-								<input class="input is-rounded" type="text" id="searchText" name="searchText"
-									placeholder="Enter a Pokemon">
-								<button for="searchText" class="button is-info is-rounded">Search</button>
+					<div class="card-content">
+						<div class="media">
+							<div class="media-left">
+								<figure class="image is-48x48">
+									<img src="assets/pokeball.png" id='avatar' alt="Placeholder image">
+								</figure>
 							</div>
-						</form>
+							<div class="media-content">
+								<p class="title is-4" id="name">Thank you for checking out this Pokedex!</p>
+								<p class="subtitle is-6" id='id'>#1</p>
+							</div>
+						</div>
+
+						<div class="content has-text-centered" id="pokemonDesc">
+							<p>Welcome to the Pokedex, this simple verion will allow you to search for a pokemon by name
+								or
+								number, then display some info about it.
+								<br>
+								Enjoy!
+							</p>
+							<p>Type a Pokemons' name or number to get started</p>
+						</div>
+						<div>
+							<form action="" class="form">
+								<div class="field has-addons">
+									<input class="input is-rounded" type="text" id="searchText" name="searchText"
+										placeholder="Enter a Pokemon">
+									<button for="searchText" class="button is-info is-rounded">Search</button>
+								</div>
+								<button class="button is-info is-rounded hideResetBtn" id="resetBtn">
+									<a href="/index.html">Home</a>
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-	<script src="app.js"></script>
-</body>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="app.js"></script>
+	</body>
 
 </html>
