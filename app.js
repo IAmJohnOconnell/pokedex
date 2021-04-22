@@ -13,7 +13,7 @@ const populateCard = (pokemon, pokemonDesc) => {
 	let pokemonName = pokemon.name[0].toUpperCase() + pokemon.name.substring(1);
 	displayName.textContent = pokemonName;
 	pokemonDescDisplay.textContent = pokemonDesc;
-	resetBtn.classList.remove('hideResetBtn')
+	resetBtn.classList.remove('hideResetBtn');
 };
 
 const searchPokemon = async () => {
@@ -37,10 +37,6 @@ const searchPokemon = async () => {
 		}
 	}
 };
-
-resetBtn.addEventListener('click', (e) => {
-	alert('you clicked me')
-})
 
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
